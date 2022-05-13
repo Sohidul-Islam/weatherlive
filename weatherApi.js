@@ -1,8 +1,8 @@
 const buttonAddon2 = document.getElementById("button-addon2");
 const searchBar = document.getElementById("search-bar");
 buttonAddon2.addEventListener("click", () => {
-    console.log(searchBar.value);
-    searchWeather(searchBar.value)
+    // console.log(searchBar.value);
+    searchWeather(searchBar.value, 0)
 })
 const searchWeather = async (city, isCurrentCity) => {
     let url;
@@ -20,8 +20,8 @@ const searchWeather = async (city, isCurrentCity) => {
 searchWeather('', 1);
 
 const displayWeather = (weather) => {
-    console.log("weather data: ", weather);
-    console.log("weather message: ", weather.message);
+    // console.log("weather data: ", weather);
+    // console.log("weather message: ", weather.message);
     const weatherDiv = document.getElementById("weatherCard");
     if (weather.name !== undefined) {
         weatherDiv.innerHTML = `<div class="card weather-card slide-in-elliptic-top-fwd"><div class=" card-body text-center">
@@ -64,8 +64,8 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    console.log("lat: ", position.coords.latitude);
-    console.log("lon: ", position.coords.longitude);
+    // console.log("lat: ", position.coords.latitude);
+    // console.log("lon: ", position.coords.longitude);
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=c6b9cae3971468363aaabf7e422d6a7e`;
