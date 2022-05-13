@@ -50,6 +50,9 @@ const iconSelector = (weather) => {
     else if (weather === "Rain") {
         return "fas fa-solid fa-cloud-rain"
     }
+    else if (weather === "Snow") {
+        return "fas fa-solid fa-cloud-snow"
+    }
     else {
         return "fas fa-solid fa-cloud"
     }
