@@ -11,8 +11,8 @@ body {
   background-position: center;
 }
 #weather-section1 {
-  margin: 40px;
-  padding: 40px;
+  /* margin: 40px; */
+  padding: 80px 0px 0px 0px;
 }
 .heading-1 {
   font-size: 32px;
